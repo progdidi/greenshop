@@ -1,0 +1,22 @@
+@import './base/fonts.scss';
+@import './base/vars.scss';
+@import './base/reset.scss';
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+    color: $black-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.container {
+    max-width: 1232px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
