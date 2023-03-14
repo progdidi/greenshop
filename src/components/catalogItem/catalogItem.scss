@@ -1,0 +1,31 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.catalog__item {
+    max-width: 258px;
+    &-media {
+        padding: 31px 4px 19px 4px;
+        margin-bottom: 12px;
+        background-color:#FBFBFB;;
+    }
+    &-img {
+        background-color:#FBFBFB;;
+    }
+    &-about {
+
+    }
+    &-title {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 6px;
+        font-weight: 400;
+
+    }
+    &-price {
+        color: $green-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+
+    }
+}
