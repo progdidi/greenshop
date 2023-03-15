@@ -48,12 +48,12 @@ const Footer = () => {
                     <a href="" className="footer__logo">
                         <img src={footerLogo} alt="logo" className="footer__logo-img" />
                     </a>
-                    <p className="footer__contacts-item">70 West Buckingham Ave. Farmingdale, NY 11735</p>
-                    <a href="mail:ontact@greenshop.com" className="footer__contacts-item">contact@greenshop.com</a>
-                    <a href="tel:+8801911717490" className="footer__contacts-item">+88 01911 717 490</a>
+                    <p className="footer__contacts-item location">70 West Buckingham Ave. Farmingdale, NY 11735</p>
+                    <a href="mail:ontact@greenshop.com" className="footer__contacts-item mail">contact@greenshop.com</a>
+                    <a href="tel:+8801911717490" className="footer__contacts-item phone">+88 01911 717 490</a>
                 </div>
                 <div className="footer__info">
-                    <div className="footer__info-item">
+                    <div className="footer__info-category">
                         <h6 className="footer__info-title">My Account</h6>
                         <ul className="footer__info-list">
                             <li className="footer__info-item"><a href="" className="footer__info-link">My Account</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
                             <li className="footer__info-item"><a href="" className="footer__info-link">Specials</a></li>
                         </ul>
                     </div>
-                    <div className="footer__info-item">
+                    <div className="footer__info-category">
                         <h6 className="footer__info-title">Help & Guide</h6>
                         <ul className="footer__info-list">
                             <li className="footer__info-item"><a href="" className="footer__info-link">Help Center</a></li>
@@ -73,7 +73,7 @@ const Footer = () => {
                             <li className="footer__info-item"><a href="" className="footer__info-link">How to Return</a></li>
                         </ul>
                     </div>
-                    <div className="footer__info-item">
+                    <div className="footer__info-category">
                         <h6 className="footer__info-title">Categories</h6>
                         <ul className="footer__info-list">
                             <li className="footer__info-item"><a href="" className="footer__info-link">House Plants</a></li>
@@ -83,7 +83,7 @@ const Footer = () => {
                             <li className="footer__info-item"><a href="" className="footer__info-link">Accessories</a></li>
                         </ul>
                     </div>
-                    <div className="footer__info-item">
+                    <div className="footer__info-category">
                         <h6 className="footer__info-title">Social Media</h6>
                         <ul className="social__list">
                             <li className="social__list-item">
