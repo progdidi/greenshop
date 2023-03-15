@@ -7,8 +7,12 @@
 
 .catalog {
     padding-top: 26px;
+    &__inner {
+        display: flex;
+    }
     &__aside {
         max-width: 310px;
+        margin-right: 50px;
         .catalog__filter {
             background-color: $background-color;
             padding: 14px 24px 14px 18px;
@@ -73,9 +77,42 @@
         }
     }
     
-    &__products {
+    &__content {
+        .catalog__top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 31px;
+            &-buttons {
+                display: flex;
+            }
+            &-btn {
+                margin-right: 40px;
+                cursor: pointer;
+            }
+            &-sort {
+                display: flex;
+                .catalog__sort-text {
+                }
+                .catalog__sort-items {
+                }
+            }
+        }
+
+        .catalog__items {
+            .catalog__products {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 33px;
+                grid-row-gap: 70px;
+            }
+        }
     }
 }
+
+
+
+
+
 
 
 
