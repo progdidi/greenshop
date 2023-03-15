@@ -1,0 +1,74 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.slider {
+    margin-top: 12px;
+    &__items {
+    }
+    &__item {
+    }
+    &__buttons {
+        max-width: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__btn {
+        padding: 0;
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(70, 163, 88, 0.3);
+        border-radius: 50%;
+        &:hover {
+            background-color: $green-color;
+        }
+    }
+}
+
+.promo__item {
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    display: flex;
+    justify-content: space-between;
+    &-content {
+        max-width: 557px;
+        padding-top: 68px;
+        padding-left: 43px;
+    }
+    &-subtitle {
+        margin-bottom: 7px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    &-title {
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        width: 530px;
+        span {
+            color: $green-color;
+        }
+    }
+    &-text {
+        margin-bottom: 44px;
+    }
+    &-btn {
+        @include green-btn;
+        padding: 11px 26px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &-media {
+    }
+    &-img {
+    }
+}
+
