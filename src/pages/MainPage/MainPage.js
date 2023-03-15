@@ -1,7 +1,10 @@
+import banner from './images/banner.png';
+
 import './mainPage.scss';
 
 import Slider from '../../components/slider/Slider';
 import CatalogItem from '../../components/catalogItem/CatalogItem';
+import {plants} from "../../helpers/plants/plants";
 
 const MainPage = () => {
     return ( 
@@ -111,8 +114,45 @@ const MainPage = () => {
                         </div>
                         
                     </div>
+                    <div className="banner">
+                        <img src={banner} alt="banner" className="banner__img" />
+                    </div>
                 </div>
-                <div className="catalog__products"></div>
+                <div className="catalog__content">
+                    <div className="catalog__content-top">
+                        <div className="catalog__content-buttons">
+                            <div className="catalog__content-btn">All Plants</div>
+                            <div className="catalog__content-btn">New Arrivals</div>
+                            <div className="catalog__content-btn">Sale</div>
+                        </div>
+
+                        <div className="catalog__content-sort">
+                            <p className="catalog__sort-text">Short by:</p>
+                            <select className="catalog__sort-items">
+                                <option className="catalog__sort-items">prise</option>
+                                <option className="catalog__sort-items">size</option>
+                                <option className="catalog__sort-items">prise</option>
+                                <option className="catalog__sort-items">Кукушкина</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div className="catalog__content-products">
+                        <div className="catalog__items">
+                            {plants.map((plant) => {
+                                return (
+                                    <CatalogItem
+                                        key={plant.id}
+                                        title={plant.title} 
+                                        price={plant.descr}
+                                        img={plant.img} 
+                                        link={plant.link}
+                                    />
+                                )                            
+                            })}
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
               

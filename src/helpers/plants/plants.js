@@ -6,63 +6,63 @@ import evergreen from './images/evergreen.png';
 import fern from './images/fern.png';
 import palm from './images/palm.png';
 import spiderLily from './images/spider-lily.png';
-import violetAfrican from './images/violet-african';
+import violetAfrican from './images/violet-african.png';
 
-const plants = {
+const plants = [
     {
-        img: {barberton},
+        img: barberton,
         title:'Barberton Daisy',
         price: 119,
-        id
+        id: 1
     },
     {
-        img: {begoniaAngel},
+        img: begoniaAngel,
         title:'Angel Wing Begonia',
         price: 169,
-        id
+        id: 2
     },
     {
-        img: {violetAfrican},
+        img: violetAfrican,
         title:'African Violet',
         price: 199,
-        id
+        id: 3
     },
     {
-        img: {spiderLily},
+        img: spiderLily,
         title:'Beach Spider Lily',
         price: 129,
-        id
+        id: 4
     },
     {
-        img: {bromeliad},
+        img: bromeliad,
         title:'Blushing Bromeliad',
         price: 139,
-        id
+        id: 5
     },
     {
-        img: {aluminum},
+        img: aluminum,
         title:'Aluminum Plant',
         price: 179,
-        id
+        id: 6
     },
     {
-        img: {fern},
-        title:'Bird's Nest Fern',
+        img: fern,
+        title:'Birds Nest Fern',
         price: 99,
-        id
+        id: 7
     },
     {
-        img: {palm},
+        img: palm,
         title:'Broadleaf Lady Palm',
         price: 59,
-        id
+        id: 8
     },
     {
-        img: {evergreen},
+        img: evergreen,
         title:'Chinese Evergreen',
         price: 39,
-        id
+        id: 9
     }
-}
+]
 
-export default plants;
+export {plants};

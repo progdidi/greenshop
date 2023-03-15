@@ -1,2 +1,82 @@
 @import '../../style/base/vars.scss';
 @import '../../style/base/mixins.scss';
+
+.promo {
+    margin-top: 20px;
+}
+
+.catalog {
+    padding-top: 26px;
+    &__aside {
+        max-width: 310px;
+        .catalog__filter {
+            background-color: $background-color;
+            padding: 14px 24px 14px 18px;
+            &-category {
+                margin-bottom: 36px;
+                &:last-child {
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                }
+            }
+            &-title {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+            }
+            &-list {
+            }
+            &-item {
+                margin-bottom: 18px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &-btn {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 40px;
+                &:hover {
+                    color: $green-color;
+                }
+            }
+            &-product {
+            }
+            &-amount {
+            }
+            .price-range__form {
+                &-input {
+                }
+                &-label {
+                    font-size: 15px;
+                    line-height: 16px;
+                }
+                &-btn {
+                    @include green-btn;
+                    padding: 8px 26px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .banner {
+            
+        }
+    }
+    
+    &__products {
+    }
+}
+
+
+
+
