@@ -21,7 +21,7 @@ const CheckoutPage = () => {
                             </label>
                             <label htmlFor="region" className="checkout-form__label">
                                 Country / Region
-                                <input type="text" className="checkout-form__input" name="region" id="region"/>
+                                <input type="text" className="checkout-form__input" name="region" id="region" placeholder='Select a country / region'/>
                             </label>
                             <label htmlFor="town" className="checkout-form__label">
                                 Town / City
@@ -29,12 +29,12 @@ const CheckoutPage = () => {
                             </label>
                             <label htmlFor="street" className="checkout-form__label">
                                 Street Address
-                                <input type="text" className="checkout-form__input" name="street" id="street"/>
-                                <input type="text" className="checkout-form__input" name="peas" id="peas"/>
+                                <input type="text" className="checkout-form__input" name="street" id="street" placeholder='House number and street name'/>
+                                <input type="text" className="checkout-form__input" name="peas" id="peas" placeholder='Appartment, suite, unit, etc. (optional)'/>
                             </label>
                             <label htmlFor="state" className="checkout-form__label">
                                 State
-                                <input type="text" className="checkout-form__input" name="state" id="state"/>
+                                <input type="text" className="checkout-form__input" name="state" id="state" placeholder='Select a state'/>
                             </label>
                             <label htmlFor="zip" className="checkout-form__label">
                                 Zip
@@ -64,16 +64,27 @@ const CheckoutPage = () => {
                         <div className="order__payment">
                             <h6 className="payment-form__title">Payment Method</h6>
                             <form action="" className="payment-form">
-                                <input type="radio" id="card" name="card" value="card"className="payment-form__input" />
-                                <label for="card" className="payment-form__label">
-                                    <img src={payment} alt="" className="payment-form__label-img" />
-                                </label>
+                                <div className="payment-form__item">
+                                    <input type="radio" id="card" name="card" value="card"className="payment-form__input" />
+                                    <label for="card" className="payment-form__label">
+                                        <img src={payment} alt="" className="payment-form__label-img" />
+                                    </label>
+                                </div>
 
-                                <input type="radio" id="transfer" name="transfer" value="transfer" className="payment-form__input"/>
-                                <label for="transfer" className="payment-form__label">Dorect bank transfer</label>
+                                <div className="payment-form__item">
+                                    <input type="radio" id="transfer" name="transfer" value="transfer" className="payment-form__input"/>
+                                    <label for="transfer" className="payment-form__label">Dorect bank transfer</label>
+                                </div>
 
-                                <input type="radio" id="cash" name="cash" value="cash" className="payment-form__input"/>
-                                <label for="cash" className="payment-form__label">Cash on delivery</label>
+                                <div className="payment-form__item">
+                                    <input type="radio" id="cash" name="cash" value="cash" className="payment-form__input"/>
+                                    <label for="cash" className="payment-form__label">Cash on delivery</label>
+                                </div>
+                                
+
+                                
+
+                                
                             </form>
                         </div>
 
