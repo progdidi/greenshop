@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import deleteIcon from "./images/delete.svg";
 
 
@@ -80,8 +82,8 @@ const ShoppingCartPage = () => {
                             <li className="cart__list-item">
                                 <p className="cart__list-category">Shiping</p>
                                 <p className="cart__list-sum">$2,683.00</p>
-                                <a href="" className="cart__list-link">View shipping charge</a>
                             </li>
+                            <a href="" className="cart__list-link">View shipping charge</a>
                         </ul>
 
                         <div className="cart__total">Total
@@ -89,7 +91,7 @@ const ShoppingCartPage = () => {
                         </div>
 
                         <div className="cart__buttons">
-                            <a href="" className="cart__link">Proceed To Checkout</a>
+                            <NavLink to="/shop/shoppingcart/checkout" className="cart__link checkout">Proceed To Checkout</NavLink>
                             <a href="" className="cart__link">Continue Shopping</a>
                         </div>
                     </div>

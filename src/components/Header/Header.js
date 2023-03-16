@@ -42,9 +42,9 @@ const Header = () => {
                         </form>
 
                         <div className="basket">
-                            <button className="basket__btn">
+                            <NavLink to="/shop/shoppingcart" className="basket__btn">
                                 <img src={basket} alt="basket" className="basket__btn-img" />
-                            </button>
+                            </NavLink>
                             <p className="basket__number">6</p>
                         </div>
 
