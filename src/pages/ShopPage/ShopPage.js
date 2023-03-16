@@ -1,5 +1,9 @@
 import shop from "./images/shop.png";
 import like from "./images/like.svg";
+import twitter from './images/social/twitter.svg';
+import facebook from './images/social/facebook.svg';
+import linkedin from './images/social/linkedin.svg';
+import mail from './images/social/mail.svg';
 
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
@@ -19,23 +23,25 @@ const ShopPage = () => {
                             </div>
                         </div>
                         <div className="product__details">
-                            <div className="product__top">
+                            <div className="product__details-top">
                                 <h4 className="product__title">Barberton Daisy</h4>
-                                <p className="product__price"></p>
+                                <p className="product__price">119.00$</p>
                                 <div className="product__rating">19 Customer Review</div>
                             </div>
-                            <div className="product__descr">
+                            <div className="product__details-descr">
                                 <h6 className="product__descr-title">Short Description:</h6>
                                 <p className="product__descr-text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
                             </div>
-                            <div className="product__size">
+                            <div className="product__details-size">
                                 <h6 className="product__size-title">Size:</h6>
-                                <button className="product__size-item">S</button>
-                                <button className="product__size-item">M</button>
-                                <button className="product__size-item">L</button>
-                                <button className="product__size-item">XL</button>
+                                <ul className="size__list">
+                                    <li className="size__list-item"><button className="size__list-btn">S</button></li>
+                                    <li className="size__list-item"><button className="size__list-btn">M</button></li>
+                                    <li className="size__list-item"><button className="size__list-btn">L</button></li>
+                                    <li className="size__list-item"><button className="size__list-btn">XL</button></li>
+                                </ul>
                             </div>
-                            <div className="product__buy">
+                            <div className="product__details-buy">
                                 <div className="product__buy-amount"></div>
                                 <button className="product__buy-btn buy">Buy NOW</button>
                                 <button className="product__buy-btn basket">Add to cart</button>
@@ -43,16 +49,42 @@ const ShopPage = () => {
                                     <img src={like} alt="" className="product__buy-img" />
                                 </button>
                             </div>
-                            <div className="product__info">
+                            <div className="product__details-info">
                                 <p className="product__info-item">SKU: 1995751877966</p>
                                 <p className="product__info-item">Categories: Potter Plants</p>
                                 <p className="product__info-item">Tags: Home, Garden, Plants</p>
+                            </div>
+                            <div className="product__details-social">
+                                <p className="product__social-text">Share this products:</p>
+                                <ul className="product__social-list">
+                                    <li className="product__social-item">
+                                        <a href="#" className="product__social-link">
+                                        <img src={facebook} alt="" className="product__social-img" />
+                                        </a>
+                                    </li>
+                                    <li className="product__social-item">
+                                        <a href="#" className="product__social-link">
+                                        <img src={twitter} alt="" className="product__social-img" />
+                                        </a>
+                                    </li>
+                                    <li className="product__social-item">
+                                        <a href="#" className="product__social-link">
+                                        <img src={linkedin} alt="" className="product__social-img" />
+                                        </a>
+                                    </li>
+                                    <li className="product__social-item">
+                                        <a href="#" className="product__social-link">
+                                        <img src={mail} alt="" className="product__social-img" />
+                                        </a>
+                                    </li>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
 
                     <div className="product__about">
-                        <div className="product__description">
+                        <div className="product__about-descr">
                             <p className="product__description-text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p>
 
                             <p className="product__description-text">
@@ -72,12 +104,13 @@ const ShopPage = () => {
                             <p className="product__description-text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
-                        <div className="product__reviews"></div>
+                        <div className="product__about-reviews"></div>
                     </div>
                     
                 </div>
 
                 <div className="related">
+                    <h4 className="related__title">Related Products</h4>
                     <div className="related__products">
                         {plants.map((plant) => {
                             return (
