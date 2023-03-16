@@ -1,2 +1,63 @@
 @import '../../style/base/vars.scss';
 @import '../../style/base/mixins.scss';
+
+.checkout {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .checkout-form {
+        
+        &__inputs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 22px;
+            grid-row-gap: 30px;
+        }
+        &__title {
+            margin-bottom: 21px;
+        }
+        &__label {
+            width: 100%;
+        }
+        &__input {
+            width: 100%;
+            display: block;
+        }
+        &__textarea {
+        }
+    }
+
+    .order {
+        width: 405px;
+        &__title {
+        }
+        &__products {
+        }
+        &__cart {
+        }
+        &__payment {
+        }
+        .payment-form {
+            &__title {
+            }
+            &__label {
+                &-img {
+    
+                }
+            }
+            &__input {
+            }
+        }
+    
+        &__submit-btn {
+        }
+    }
+}
+
+
+
+
+
+
+
