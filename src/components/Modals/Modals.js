@@ -1,4 +1,6 @@
 import thanks from "./images/thanks.svg";
+import google from "./images/google.svg";
+import facebook from "./images/facebook.svg";
 
 import './modals.scss';
 
@@ -56,6 +58,34 @@ const Modals = () => {
 
                     <button className="recieved__btn">Track your order</button>
 
+                </div>
+
+                <div className="login modal__login">
+                    <div className="login__top">
+                        <button className="login__top-btn">Login</button>
+                        <button className="login__top-btn">Register</button>
+                    </div>
+                    
+                    <form action="" className="login__form">
+                        <h6 className="login__form-title">Enter your username and password to login.</h6>
+                        <input type="email" className="login__form-input" placeholder="almamun_uxui@outlook.com"/>
+                        <input type="password" className="login__form-input" />
+                        <a href="" className="password-link">Forgot Password?</a>
+                        <button className="login__form-btn">Login</button>
+                    </form>
+
+                    <div className="login__social">
+                        <p className="login__social-text">Or login with</p>
+
+                        <a href="" className="login__social-link">
+                            <img src={google} alt="" className="login__social-img" />
+                            <p className="login__social-descr">Login with Google</p>
+                        </a>
+                        <a href="" className="login__social-link">
+                            <img src={facebook} alt="" className="login__social-img" />
+                            <p className="login__social-descr">Login with Facebook</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
