@@ -67,8 +67,8 @@ const AccountPage = () => {
                     </div>
                     <div className="account__content">
                         <form action="" className="user__form">
-                            <div className="user__form-personal">
-                                <h5 className="user__form-title">Personal Information</h5>
+                            <h5 className="user__form-title">Personal Information</h5>
+                            <div className="user__form-personal">                                
                                 <div className="user__form-item">
                                     <label htmlFor="" className="user__form-label">First Name
                                     </label>
@@ -101,8 +101,8 @@ const AccountPage = () => {
                                 </div>
                             </div>
 
-                            <div className="user__form-password">
-                                <h5 className="user__form-title">Password change</h5>
+                            <h5 className="user__form-title">Password change</h5>
+                            <div className="user__form-password">                                
                                 <div className="user__form-item">
                                     <label htmlFor="" className="user__form-label">Current password
                                     </label>

@@ -1,2 +1,119 @@
 @import '../../style/base/vars.scss';
 @import '../../style/base/mixins.scss';
+
+.account {
+    &__inner {
+        display: flex;
+    }
+    &__menu {
+        margin-right: 28px;
+        width: 310px;
+        height: fit-content;
+        padding: 17px 18px;
+        background-color: $background-color;
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            margin-bottom: 15px;
+        }
+        &-list {
+            margin-bottom: 30px;
+        }
+        &-item {
+            width: 100%;
+            font-size: 15px;
+            line-height: 45px;
+            display: flex;
+            margin-left: -17px;
+            padding-left: 17px;
+            transition: all 0.3s;
+            &:hover {
+                background-color: #fff;
+                color: $green-color;
+                font-weight: 700;
+                border-left: 5px solid $green-color;
+            }
+        }
+        &-link {
+            width: 100%;
+            display: inline-block;
+
+        }
+        &-img {
+            display: inline-block;
+            margin-right: 11px;
+        }
+        &-btn {
+            color: $green-color;
+            padding-left: 27px;
+            position: relative;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 15px;
+            &::before {
+                background-image: url(images/logout.svg);
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        .user__form {
+            &-personal {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 28px;
+                grid-row-gap: 30px;
+                margin-bottom: 37px;
+            }
+            &-title {
+                margin-bottom: 20px;
+            }
+            &-item {
+            }
+            &-label {
+                display: block;
+                font-size: 15px;
+                line-height: 15px;
+                margin-bottom: 10px;
+            }
+            &-input {
+                display: block;
+                width: 100%;
+                border: 1px solid #EAEAEA;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            &-password {
+                display: grid;
+                grid-template-columns: 0.5fr;
+                grid-row-gap: 30px;
+                margin-bottom: 50px;
+            }
+            &-btn {
+                @include green-btn;
+                padding: 12px 0;
+                text-align: center;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                width: 131px;
+            }
+        }
+    }
+}
+
+
+
+
