@@ -2,6 +2,8 @@ import payment from './images/payment.png';
 
 import './checkoutPage.scss';
 
+import Modals from '../../components/Modals/Modals';
+
 const CheckoutPage = () => {
     return ( 
         <>
@@ -93,6 +95,8 @@ const CheckoutPage = () => {
                 </div>
             </div>
         </section>
+
+        <Modals/>
         </>
      );
 }
