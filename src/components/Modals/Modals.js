@@ -87,6 +87,35 @@ const Modals = () => {
                         </a>
                     </div>
                 </div>
+
+                <div className="register modal__register">
+                    <div className="login__top">
+                        <button className="login__top-btn">Login</button>
+                        <button className="login__top-btn">Register</button>
+                    </div>
+                    
+                    <form action="" className="login__form">
+                        <h6 className="login__form-title">Enter your email and password to register.</h6>
+                        <input type="text" className="login__form-input" placeholder="Username"/>
+                        <input type="email" className="login__form-input" placeholder="almamun_uxui@outlook.com"/>
+                        <input type="password" className="login__form-input" />
+                        <input type="password" className="login__form-input" placeholder="Confirm Password"/>
+                        <button className="login__form-btn">Register</button>
+                    </form>
+
+                    <div className="login__social">
+                        <p className="login__social-text">Or register with</p>
+
+                        <a href="" className="login__social-link">
+                            <img src={google} alt="" className="login__social-img" />
+                            <p className="login__social-descr">Continue with Google</p>
+                        </a>
+                        <a href="" className="login__social-link">
+                            <img src={facebook} alt="" className="login__social-img" />
+                            <p className="login__social-descr">Continue with Facebook</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         </>

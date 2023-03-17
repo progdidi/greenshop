@@ -96,7 +96,7 @@ const CheckoutPage = () => {
             </div>
         </section>
 
-        <Modals/>
+        {/* <Modals/> */}
         </>
      );
 }
