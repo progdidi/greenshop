@@ -6,6 +6,11 @@ import './accountPage.scss';
 
 import UserPage from './UserPage/UserPage';
 import AddressPage from "./AddressPage/AddressPage";
+import DownloadsPage from "./DownloadsPage/DownloadsPage";
+import OrdersPage from "./OrdersPage/OrdersPage";
+import ReportsPage from "./ReportsPage/ReportsPage";
+import SupportPage from "./SupportPage/SupportPage";
+import WishlistPage from "./WishlistPage/WishlistPage";
 
 
 const AccountPage = () => {
@@ -21,11 +26,11 @@ const AccountPage = () => {
                             <Routes>
                                     <Route path="user" element={<UserPage/>} />
                                     <Route path="address" element={<AddressPage/>} />
-                                    <Route path="orders" element={<UserPage/>} />
-                                    <Route path="wishlist" element={<UserPage/>} />
-                                    <Route path="support" element={<UserPage/>} />
-                                    <Route path="reports" element={<UserPage/>} />
-                                    <Route path="downloads" element={<UserPage/>} />
+                                    <Route path="orders" element={<OrdersPage/>} />
+                                    <Route path="wishlist" element={<WishlistPage/>} />
+                                    <Route path="support" element={<SupportPage/>} />
+                                    <Route path="reports" element={<ReportsPage/>} />
+                                    <Route path="downloads" element={<DownloadsPage/>} />
                             </Routes>
                         
 

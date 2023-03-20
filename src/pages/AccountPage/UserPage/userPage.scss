@@ -1,9 +1,16 @@
-@import '../../style/base/vars.scss';
-@import '../../style/base/mixins.scss';
+@import '../../../style/base/vars.scss';
+@import '../../../style/base/mixins.scss';
 
 .user__form {
     width: 100%;
     &-personal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 28px;
+        grid-row-gap: 30px;
+        margin-bottom: 37px;
+    }
+    &-address {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 28px;

@@ -1,2 +1,25 @@
 @import '../../../style/base/vars.scss';
 @import '../../../style/base/mixins.scss';
+
+.address {
+    &__shipping {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        &-title {
+            margin-bottom: 11px;
+        }
+        &-check {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &-btn {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: $green-color;
+            cursor: pointer;
+        }
+    }
+}
+
