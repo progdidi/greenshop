@@ -1,0 +1,50 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.post {
+    max-width: 268px;
+    &__img {
+        margin-bottom: 9px;
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $green-color;
+        &-date {
+        }
+        &-time {
+        }
+    }   
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 9px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        position: relative;
+        padding-right: 18px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(../blogItem/arrow.svg);
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            right: 0;
+        }
+
+    }
+    
+}
+

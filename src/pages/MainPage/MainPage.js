@@ -5,6 +5,8 @@ import './mainPage.scss';
 import Slider from '../../components/slider/Slider';
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
+import BlogItem from '../../components/blogItem/BlogItem';
+import { blogs } from '../../helpers/blogs/blogs';
 
 const MainPage = () => {
     return ( 
@@ -156,6 +158,28 @@ const MainPage = () => {
                     </div>
                 </div>
                 
+            </div>
+        </section>
+
+        <section className="posts">
+            <div className="container">
+                <h4 className="posts__title">Our Blog Posts</h4>
+                <p className="posts__text">We are an online plant shop offering a wide range of cheap and trendy plants. </p>
+                <div className="posts__items">
+                    {blogs.map((blog) => {
+                        return (
+                            <BlogItem
+                                key={blog.id}
+                                title={blog.title} 
+                                descr={blog.descr}
+                                img={blog.img} 
+                                link={blog.link}
+                                date={blog.date}
+                                minutes={blog.minutes}
+                            />
+                        )                            
+                    })}
+                </div>
             </div>
         </section>
               
