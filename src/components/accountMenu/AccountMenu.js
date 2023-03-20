@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import user from './images/user.svg';
 import downloads from './images/downloads.svg';
 import location from './images/location.svg';
@@ -15,46 +17,46 @@ const AccountMenu = () => {
                 <h6 className="account__menu-title">My Account</h6>
                 <ul className="account__menu-list">
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/user" className="account__menu-link">
                             <img src={user} alt="" className="account__menu-img" />
                             Account Details
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/address" className="account__menu-link">
                             <img src={location} alt="" className="account__menu-img" />
                             Address
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/orders" className="account__menu-link">
                             <img src={orders} alt="" className="account__menu-img" />
                             Orders
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/wishlist" className="account__menu-link">
                             <img src={wishlist} alt="" className="account__menu-img" />
                             Wishlist
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/reports" className="account__menu-link">
                             <img src={reports} alt="" className="account__menu-img" />
                             Reports
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/downloads" className="account__menu-link">
                             <img src={downloads} alt="" className="account__menu-img" />
                             Downloads
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="account__menu-item">
-                        <a href="" className="account__menu-link">
+                        <NavLink to="/account/support" className="account__menu-link">
                             <img src={support} alt="" className="account__menu-img" />
                             Support
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
                 <button className="account__menu-btn">Loguot</button>

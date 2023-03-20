@@ -1,10 +1,10 @@
-import './accountAddressPage.scss';
+import './addressPage.scss';
 
-const AccountAddressPage = () => {
+const AddressPage = () => {
     return ( 
         <>
         </>
      );
 }
  
-export default AccountAddressPage;
+export default AddressPage;
