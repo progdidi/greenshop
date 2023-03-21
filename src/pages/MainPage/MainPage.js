@@ -147,7 +147,7 @@ const MainPage = () => {
                                         <CatalogItem
                                             key={plant.id}
                                             title={plant.title} 
-                                            price={plant.descr}
+                                            price={plant.price}
                                             img={plant.img} 
                                             link={plant.link}
                                         />

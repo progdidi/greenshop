@@ -1,31 +1,76 @@
 @import '../../style/base/vars.scss';
 @import '../../style/base/mixins.scss';
 
-.catalog__item {
+.catalog-item {
     max-width: 258px;
-    &-media {
+    &__media {
         padding: 31px 4px 19px 4px;
         margin-bottom: 12px;
         background-color:$background-color;
+        width: 100%;
+        position: relative;
+        &:hover {
+            .catalog-item__overlay {
+                opacity: 1;
+                transition: all 0.5s;
+            }
+        }
+        &__img {
+            width: 100%;
+        }
+        .catalog-item__overlay {
+            opacity: 0;
+            padding-bottom: 7px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            &-buttons {
+                display: flex;
+                margin: 0 auto;
+                width: 125px;
+                justify-content: space-between;
+    
+            }
+            &-btn {
+                width: 35px;
+                height: 35px;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+    
+            }
+            &-img {
+    
+            }
+        }
     }
-    &-img {
-        background-color:$background-color;
-    }
-    &-about {
+    
+    &__about {
+        &-title {
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 6px;
+            font-weight: 400;
+    
+        }
+        &-price {
+            color: $green-color;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+    
+        }
 
     }
-    &-title {
-        font-size: 16px;
-        line-height: 16px;
-        margin-bottom: 6px;
-        font-weight: 400;
-
-    }
-    &-price {
-        color: $green-color;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 16px;
-
-    }
+    
+    
 }

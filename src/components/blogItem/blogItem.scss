@@ -4,9 +4,12 @@
 .post {
     max-width: 268px;
     &__img {
-        margin-bottom: 9px;
     }
     &__info {
+        padding: 9px 13px 12px 13px;
+        background-color: $background-color;
+    }
+    &__about {
         display: flex;
         margin-bottom: 4px;
         font-weight: 500;
@@ -34,14 +37,17 @@
         line-height: 16px;
         position: relative;
         padding-right: 18px;
+        font-weight: 500;
         &::after {
             position: absolute;
             content: '';
             background-image: url(../blogItem/arrow.svg);
             background-repeat: no-repeat;
             width: 16px;
-            height: 16px;
+            height: 12px;
             right: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
     }
