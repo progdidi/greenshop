@@ -7,6 +7,8 @@ import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
 import BlogItem from '../../components/blogItem/BlogItem';
 import { blogs } from '../../helpers/blogs/blogs';
+import AdvanceItem from '../../components/advanceItem/AdvanceItem';
+import { advance } from '../../helpers/advance/advance';
 
 const MainPage = () => {
     return ( 
@@ -160,6 +162,24 @@ const MainPage = () => {
                 
             </div>
         </section>
+
+        <div className="advance">
+            <div className="container">
+                <div className="advance__items">
+                    {advance.map((ad) => {
+                        return (
+                            <AdvanceItem
+                                key={ad.id}
+                                title={ad.title} 
+                                descr={ad.descr}
+                                img={ad.img} 
+                                link={ad.link}
+                            />
+                        )                            
+                    })}
+                </div>
+            </div>
+        </div>
 
         <section className="posts">
             <div className="container">

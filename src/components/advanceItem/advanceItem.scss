@@ -1,0 +1,55 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+
+.advance__item {
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 35px;
+    background-image: url(../advanceItem/round.svg);
+    background-repeat: no-repeat;
+    background-position: -150px 251px;
+    &-img {
+        
+    }
+    &-about {
+    }
+    &-title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 9px;
+        max-width: 150px;
+        text-align: right;
+        display: block;
+    }
+    &-descr {
+        max-width: 292px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        margin-bottom: 25px;
+    }
+    &-link {
+        display: block;
+        @include green-btn;
+        padding: 11px 47px 9px 28px;
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        width: 140px;
+        &::after {
+            position: absolute;
+            content: '';
+            right: 27px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(../advanceItem/arrow.svg);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 14px;
+        }
+    }
+}
