@@ -37,11 +37,49 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .search-form {
+        .search-bar {
+            position: relative;
+            height: 50px;
+            border-radius: 6px;
+            padding: 8px;
+            &:hover {
+                .search-bar__input {
+                    width: 170px;
+                    padding: 0 10px;
+                    border:1px solid $green-color;
+                    border-radius: 10px;
+                }
+                .search-bar__btn {
+                    background: $green-color;
+                }
+            }
             &__input {
+                border: none;
+                background: none;
+                outline:none;
+                float:left;
+                padding: 0;
+                color: $black-color;
+                font-size: 14px;
+                transition: 0.4s;
+                line-height: 35px;
+                width: 0px;
             }
             &__btn {
-                cursor: pointer;
+                position: absolute;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);                
+                color: white;
+                float: right;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s;
                 &-img {
                 }
             }

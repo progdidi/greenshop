@@ -35,10 +35,10 @@ const Header = () => {
                     </nav>
 
                     <div className="header__buttons">
-                        <form action="" className="search-form">
-                            <input type="text" className="search-form__input" />
-                            <button className="search-form__btn">
-                                <img src={search} alt="search" className="search-form__btn-img" />
+                        <form action="" className="search-bar">
+                            <input type="text" className="search-bar__input" />
+                            <button className="search-bar__btn">
+                                <img src={search} alt="search" className="search-bar__btn-img" />
                             </button>
                         </form>
 
