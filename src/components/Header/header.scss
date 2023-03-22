@@ -3,6 +3,7 @@
 
 .header {
     padding: 26px 0 18px;
+    margin-bottom: 12px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -39,7 +40,7 @@
         align-items: center;
         .search-bar {
             position: relative;
-            height: 50px;
+            height: 55px;
             border-radius: 6px;
             padding: 8px;
             &:hover {
@@ -67,7 +68,7 @@
             }
             &__btn {
                 position: absolute;
-                right: 8px;
+                right: 0px;
                 top: 50%;
                 transform: translateY(-50%);                
                 color: white;

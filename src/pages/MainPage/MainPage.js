@@ -2,7 +2,7 @@ import banner from './images/banner.png';
 
 import './mainPage.scss';
 
-import Slider from '../../components/slider/Slider';
+import PromoSlider from '../../components/PromoSlider/PromoSlider';
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
 import BlogItem from '../../components/blogItem/BlogItem';
@@ -15,7 +15,7 @@ const MainPage = () => {
         <>
         <section className="promo">
             <div className="container">
-                <Slider/>  
+                <PromoSlider/>  
             </div>
         </section>
 

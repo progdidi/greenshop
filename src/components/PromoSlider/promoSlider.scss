@@ -7,23 +7,7 @@
     }
     &__item {
     }
-    &__buttons {
-        max-width: 40px;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    &__btn {
-        padding: 0;
-        cursor: pointer;
-        width: 8px;
-        height: 8px;
-        background-color: rgba(70, 163, 88, 0.3);
-        border-radius: 50%;
-        &:hover {
-            background-color: $green-color;
-        }
-    }
+    
 }
 
 .promo__item {
@@ -71,4 +55,38 @@
     &-img {
     }
 }
+
+.slick {
+    &-dots {
+        position: absolute;
+        left: 50%;
+        bottom: 17px;
+        transform: translateX(-50%);
+        li{
+            margin: 0 4px;
+            display: inline-block;
+        }
+        li.slick-active{
+            button{
+                background-color: $green-color;
+            }
+            
+        }
+        button{
+            display: block;
+            background-color: rgba(70, 163, 88, 0.3);
+            border-radius: 50%;
+            border: none;
+            font-size: 0;
+            padding: 0;
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+            &:hover {
+                background-color: $green-color;
+            }
+        }
+    }
+}
+
 
