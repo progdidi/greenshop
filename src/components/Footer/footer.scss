@@ -4,13 +4,12 @@
 .footer {
     margin-top: 100px;
     &__services {
-        padding: 25px;
         background-color: $background-color;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         .services__item {
             max-width: 204px;
-            padding-right: 34px;
+            padding: 0 27px;
             border-right: 1px solid rgba(70, 163, 88, 0.1);
             &:last-child {
                 border-right: none;
@@ -82,9 +81,8 @@
     &__contacts {
         background: rgba(70, 163, 88, 0.1);
         padding: 25px 23px 20px 23px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         .footer__logo {
             padding: 3px 0 6px;
             &-img {
@@ -119,8 +117,8 @@
 
     &__info {
         padding: 33px 23px 27px 23px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         background-color: $background-color;
         border-bottom: 1px solid rgba(70, 163, 88, 0.2);
         &-category {

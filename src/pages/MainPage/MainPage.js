@@ -3,10 +3,14 @@ import banner from './images/banner.png';
 import './mainPage.scss';
 
 import PromoSlider from '../../components/PromoSlider/PromoSlider';
+//catalog
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
+import PriceRange from '../../components/Filter/PriceRange/PriceRange';
+//blogs
 import BlogItem from '../../components/blogItem/BlogItem';
 import { blogs } from '../../helpers/blogs/blogs';
+//advance
 import AdvanceItem from '../../components/advanceItem/AdvanceItem';
 import { advance } from '../../helpers/advance/advance';
 
@@ -85,13 +89,7 @@ const MainPage = () => {
                             </div>
 
                             <div className="catalog__filter-category">
-                                <h6 className="catalog__filter-title">Price Range</h6>
-                                <form className="price-range__form" action="">   
-                                                                
-                                    <input type="range" id="price-range" className="price-range__form-input" name="price" min="39" max="1500"/>
-                                    <label for="price" className="price-range__form-label">Price: $39 - $1230</label>
-                                    <input className="price-range__form-btn" type="submit" value="Filter"/>
-                                </form>
+                                <PriceRange/>
                             </div>
 
                             <div className="catalog__filter-category">

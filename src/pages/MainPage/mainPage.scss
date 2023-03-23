@@ -53,23 +53,6 @@
             }
             &-amount {
             }
-            .price-range__form {
-                &-input {
-                }
-                &-label {
-                    font-size: 15px;
-                    line-height: 16px;
-                }
-                &-btn {
-                    @include green-btn;
-                    padding: 8px 26px;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 20px;
-                    border: none;
-                    cursor: pointer;
-                }
-            }
         }
 
         .banner {
@@ -88,6 +71,13 @@
             &-btn {
                 margin-right: 40px;
                 cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    font-weight: 700;
+                    color: $green-color;
+                    border-bottom: 2px solid $green-color;
+                }
+                
             }
             &-sort {
                 display: flex;

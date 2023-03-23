@@ -9,9 +9,16 @@ const CatalogItem = ({img, title, price}) => {
         <>
             <div className="catalog-item">
                 <a href="#" className="catalog-item__link">
-                    <div className="catalog-item__media">
-                        <img src={img} alt="" className="catalog-item__img" />
-                        <div className="catalog-item__overlay">
+                    <div className="catalog-item-content">
+                        <div className="catalog-item__media">
+                            <img src={img} alt="" className="catalog-item__img" />                                               
+                        </div>
+                        <div className="catalog-item__about">
+                            <h6 className="catalog-item__about-title">{title}</h6>
+                            <p className="catalog-item__about-price">${price}.00</p>
+                        </div>
+                    </div>
+                    <div className="catalog-item__overlay">
                         <div className="catalog-item__overlay-buttons">
                             <button className="catalog-item__overlay-btn">
                                 <img src={basket} alt="basket" className="catalog-item__overlay-img" />
@@ -22,15 +29,8 @@ const CatalogItem = ({img, title, price}) => {
                             <button className="catalog-item__overlay-btn">
                                 <img src={search} alt="search" className="catalog-item__overlay-img" />
                             </button>
-                        </div>
-                        
-                    </div>
-                    </div>
-                    <div className="catalog-item__about">
-                        <h6 className="catalog-item__about-title">{title}</h6>
-                        <p className="catalog-item__about-price">${price}.00</p>
-                    </div>
-                    
+                        </div> 
+                    </div>                    
                 </a>                
             </div>
         </>

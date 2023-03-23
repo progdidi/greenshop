@@ -1,0 +1,59 @@
+@import '../../../style/base/vars.scss';
+@import '../../../style/base/mixins.scss';
+
+.price-range__form {
+    &-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    &-label {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+    &-btn {
+        display: block;
+        @include green-btn;
+        padding: 8px 26px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: $grey-color;
+    border-radius: 5px;
+    background-image: linear-gradient(#ff4500, #ff4500);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  /* Input Thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: $green-color;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: $green-color;
+  }
+  
+  /* Input Track */
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }

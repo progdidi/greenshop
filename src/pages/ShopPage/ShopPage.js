@@ -1,10 +1,18 @@
-import shop from "./images/shop.png";
+//Plant Slider
+import PlantCardSlider from "../../components/PlantCardSlider/PlantCardSlider";
+
+//Plant details
+import StarRating from "../../components/StarRating/StarRating";
+
+
+//social images
 import like from "./images/like.svg";
 import twitter from './images/social/twitter.svg';
 import facebook from './images/social/facebook.svg';
 import linkedin from './images/social/linkedin.svg';
 import mail from './images/social/mail.svg';
 
+//related products
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
 
@@ -17,15 +25,12 @@ const ShopPage = () => {
             <div className="container">
                 <div className="product">
                     <div className="product__card">
-                        <div className="product__media">
-                            <div className="product__slider">
-                                <img src={shop} alt="" className="product__slider-img" />
-                            </div>
-                        </div>
+                        <PlantCardSlider/>
                         <div className="product__details">
                             <div className="product__details-top">
                                 <h4 className="product__title">Barberton Daisy</h4>
                                 <p className="product__price">119.00$</p>
+                                <StarRating/>
                                 <div className="product__rating">19 Customer Review</div>
                             </div>
                             <div className="product__details-descr">

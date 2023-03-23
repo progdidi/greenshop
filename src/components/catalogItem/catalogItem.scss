@@ -3,54 +3,22 @@
 
 .catalog-item {
     max-width: 258px;
-    &__media {
-        padding: 31px 4px 19px 4px;
-        margin-bottom: 12px;
-        background-color:$background-color;
-        width: 100%;
-        position: relative;
+    position: relative;
         &:hover {
             .catalog-item__overlay {
                 opacity: 1;
                 transition: all 0.5s;
             }
         }
+    &__content {        
+    }
+    &__media {
+        padding: 31px 4px 19px 4px;
+        margin-bottom: 12px;
+        background-color:$background-color;
+        width: 100%;
         &__img {
             width: 100%;
-        }
-        .catalog-item__overlay {
-            opacity: 0;
-            padding-bottom: 7px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            &-buttons {
-                display: flex;
-                margin: 0 auto;
-                width: 125px;
-                justify-content: space-between;
-    
-            }
-            &-btn {
-                width: 35px;
-                height: 35px;
-                background-color: #fff;
-                border-radius: 4px;
-                padding: 8px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-    
-            }
-            &-img {
-    
-            }
         }
     }
     
@@ -70,6 +38,41 @@
     
         }
 
+    }
+    &__overlay {
+        opacity: 0;
+        padding-bottom: 7px;
+        position: absolute;
+        top: 0;
+        bottom: 48px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-top: 1px solid $green-color;
+        &-buttons {
+            display: flex;
+            margin: 0 auto;
+            width: 125px;
+            justify-content: space-between;
+
+        }
+        &-btn {
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+        &-img {
+
+        }
     }
     
     
