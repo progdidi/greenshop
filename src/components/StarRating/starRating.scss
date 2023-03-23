@@ -4,3 +4,11 @@
 input[type="radio"] {
     display: none;
 }
+
+.star {
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+        fill: #FFAC0C;
+    }
+}
