@@ -1,2 +1,39 @@
 @import '../../style/base/vars.scss';
 @import '../../style/base/mixins.scss';
+
+.counter {
+    width: 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    column-gap: 5px;
+    &__button {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #fff;
+        background-color: $green-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-min.disabled {
+            border: #c4c4c4;
+            background-color: $grey-color;
+        }
+        
+        &-plus {
+        }
+
+    }
+    &__number {
+        &-input {
+            width: 20px;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+        }
+    }
+}
+

@@ -3,6 +3,7 @@ import PlantCardSlider from "../../components/PlantCardSlider/PlantCardSlider";
 
 //Plant details
 import StarRating from "../../components/StarRating/StarRating";
+import QuantityCounter from "../../components/QuantityCounter/QuantityCounter";
 
 
 //social images
@@ -47,7 +48,9 @@ const ShopPage = () => {
                                 </ul>
                             </div>
                             <div className="product__details-buy">
-                                <div className="product__buy-amount"></div>
+                                <div className="product__buy-amount">
+                                    <QuantityCounter/>
+                                </div>
                                 <button className="product__buy-btn buy">Buy NOW</button>
                                 <button className="product__buy-btn basket">Add to cart</button>
                                 <button className="product__buy-btn like">

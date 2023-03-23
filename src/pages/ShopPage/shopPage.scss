@@ -76,20 +76,36 @@
         }
         &-buy {
             display: flex;
+            align-items: center;
             margin-bottom: 26px;
             .product__buy-amount {
                 max-width: 119px;
+                margin-right: 26px;
             }
             .product__buy-btn {
                 &.buy {
                     @include green-btn;
+                    padding: 11px 32px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-right: 10px;
                 }
                 &.basket {
+                    padding: 11px 20px;
+                    border: 1px solid $green-color;
+                    border-radius: 6px;
+                    margin-right: 10px;
                     &:hover {
                         @include green-btn;
+                        
+                        
                     }
                 }
                 &.like {
+                    padding: 10px;
+                    border: 1px solid $green-color;
+                    border-radius: 6px;
                 }
             }
             .product__buy-img {
