@@ -5,11 +5,18 @@
     margin-top: 100px;
     &__services {
         background-color: $background-color;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 23px;
+        &-items {
+            display: flex;
+            justify-content: space-between;
+        }
         .services__item {
-            max-width: 204px;
+            max-width: 257px;
             padding: 0 27px;
+            padding-top: 1px;
             border-right: 1px solid rgba(70, 163, 88, 0.1);
             &:last-child {
                 border-right: none;
@@ -32,6 +39,8 @@
         }
         .newsletter {
             max-width: 354px;
+            padding: 0 25px;
+            padding-top: 7px;
             &__title {
                 font-weight: 700;
                 font-size: 18px;
@@ -81,24 +90,25 @@
     &__contacts {
         background: rgba(70, 163, 88, 0.1);
         padding: 25px 23px 20px 23px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        align-items: center;
         .footer__logo {
-            padding: 3px 0 6px;
+            width: 235px;
             &-img {
             }
         }
         
         &-item {
-            padding-left: 30px;
+            padding-left: 35px;
             position: relative;
+            width: 257px;
             &::before {
                 position: absolute;
                 content: '';
                 width: 20px;
                 height: 20px;
                 background-repeat: no-repeat;
-                left: 0;
+                left: 5px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -117,11 +127,17 @@
 
     &__info {
         padding: 33px 23px 27px 23px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        justify-content: space-between;
         background-color: $background-color;
         border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+        }
         &-category {
+            width: 235px;
+            padding: 0 23px;
         }
         &-title {
             font-weight: 700;
@@ -137,31 +153,46 @@
         }
         &-link {
         }
+
+        &-social {
+            width: 354px;
+            padding: 0 25px;
+            padding-top: 7px;
+            .footer__info-title {
+                margin-bottom: 20px;
+            }
+
+            
+        }
         
     
         .social__list {
             display: flex;
             margin-bottom: 33px;
+           
             &-item {
                 border: 1px solid rgba(70, 163, 88, 0.2);
                 border-radius: 4px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                padding: 7px;
                 align-items: center;
                 margin-right: 10px;
                 width: 30px;
                 height: 30px;
             }
             &-link {
+                display: inline-block;
             }
             &-img {
+                display: block;
             }
         }
-        .payment__list {
-            &-item {
-            }
-            &-img {
-            }
+    }
+
+    &__payment {
+        .footer__info-title {
+            margin-bottom: 13px;
         }
     }
 
