@@ -172,8 +172,50 @@
     }
     &__products {
         display: flex;
+        &-item {
+            max-width: 220px;
+            margin-top: 26px;
+        }
+    }
+
+    
+}
+
+.slick {
+    &-dots-shop {
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 17px;
+        transform: translateX(-50%);
+        li{
+            margin: 0 10px;
+            display: inline-block;
+        }
+        li.slick-active{
+            button{
+                background-color: $green-color;
+            }
+            
+        }
+        button{
+            display: block;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1.3px solid $green-color;
+            font-size: 0;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            &:hover {
+                background-color: $green-color;
+            }
+        }
     }
 }
+
+
 
 
 

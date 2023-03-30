@@ -16,10 +16,24 @@ import mail from './images/social/mail.svg';
 //related products
 import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
+import Slider from 'react-slick';
 
 import './shopPage.scss';
 
 const ShopPage = () => {
+
+    var settings = {
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        dotsClass: 'slick-dots-shop',
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      };
+
+
     return ( 
         <>
         <section className="shop">
@@ -119,19 +133,23 @@ const ShopPage = () => {
 
                 <div className="related">
                     <h4 className="related__title">Related Products</h4>
-                    <div className="related__products">
-                        {plants.map((plant) => {
-                            return (
-                                <CatalogItem
-                                    key={plant.id}
-                                    title={plant.title} 
-                                    price={plant.descr}
-                                    img={plant.img} 
-                                    link={plant.link}
-                                />
-                            )                            
-                        })}
-                    </div>
+                    <Slider {...settings}>
+                            {plants.map((plant) => {
+                                return (
+                                    <div className="related__products-item">
+                                        <CatalogItem
+                                            key={plant.id}
+                                            title={plant.title} 
+                                            price={plant.descr}
+                                            img={plant.img} 
+                                            link={plant.link}
+                                        />
+                                    </div>
+                                    
+                                )                            
+                            })}
+                    </Slider>
+                    
                 </div>
             </div>
         </section>
