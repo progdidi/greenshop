@@ -61,28 +61,94 @@ const CheckoutPage = () => {
 
                     <div className="order">
                         <h5 className="order__title">Your Order</h5>
-                        <div className="order__products"></div>
-                        <div className="order__cart"></div>
+                        <div className="order__products">
+                            <table className="products__table">
+                                <tr className="products__header">
+                                    <th className="products__header-title">Products</th>
+                                    <th className="products__header-title"></th>
+                                    <th className="products__header-title">Total</th>
+                                </tr>
+
+                                <tr className="products__item">
+                                    <td className="products__item-info">
+                                        <img src="" alt="" className="products__item-img" />
+                                        <h6 className="products__item-title">Barberton Daisy</h6>
+                                        <div className="products__item-article">SKU: 1995751877966</div>
+                                    </td>
+                                    
+                                    <td className="products__item-quantity">
+                                        (x2)
+                                    </td>
+                                    <td className="products__item-total"></td>
+                                </tr>
+                                <tr className="products__item">
+                                    <td className="products__item-info">
+                                        <img src="" alt="" className="products__item-img" />
+                                        <h6 className="products__item-title">Barberton Daisy</h6>
+                                        <div className="products__item-article">SKU: 1995751877966</div>
+                                    </td>
+                                    
+                                    <td className="products__item-quantity">
+                                        (x2)
+                                    </td>
+                                    <td className="products__item-total"></td>
+                                </tr>
+                                <tr className="products__item">
+                                    <td className="products__item-info">
+                                        <img src="" alt="" className="products__item-img" />
+                                        <h6 className="products__item-title">Barberton Daisy</h6>
+                                        <div className="products__item-article">SKU: 1995751877966</div>
+                                    </td>
+                                    
+                                    <td className="products__item-quantity">
+                                        (x2)
+                                    </td>
+                                    <td className="products__item-total"></td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        <div className="order__cart">
+                    
+                            <ul className="cart__list">
+                                <li className="cart__list-item">
+                                    <p className="cart__list-category">Subtotal</p>
+                                    <p className="cart__list-sum">$2,683.00</p>
+                                </li>
+                                <li className="cart__list-item">
+                                    <p className="cart__list-category">Coupon Discount</p>
+                                    <p className="cart__list-sum">0.00</p>
+                                </li>
+                                <li className="cart__list-item">
+                                    <p className="cart__list-category">Shiping</p>
+                                    <p className="cart__list-sum">$2,683.00</p>
+                                </li>
+                                <a href="" className="cart__list-link">View shipping charge</a>
+                            </ul>
+
+                            <div className="cart__total">Total
+                                <p className="cart__total-sum">$2,699.00</p>
+                            </div>
+                        </div>
+
                         <div className="order__payment">
                             <h6 className="payment-form__title">Payment Method</h6>
                             <form action="" className="payment-form">
-                                <div className="payment-form__item">
-                                    <input type="radio" id="card" name="card" value="card"className="payment-form__input" />
+                                    
                                     <label for="card" className="payment-form__label">
+                                        <input type="radio" id="card" name="card" value="card"className="payment-form__input" />
                                         <img src={payment} alt="" className="payment-form__label-img" />
                                     </label>
-                                </div>
 
-                                <div className="payment-form__item">
-                                    <input type="radio" id="transfer" name="transfer" value="transfer" className="payment-form__input"/>
-                                    <label for="transfer" className="payment-form__label">Dorect bank transfer</label>
-                                </div>
+                                    <label for="transfer" className="payment-form__label">
+                                        <input type="radio" id="transfer" name="card" value="card"className="payment-form__input" />
+                                        Dorect bank transfer
+                                    </label>
 
-                                <div className="payment-form__item">
-                                    <input type="radio" id="cash" name="cash" value="cash" className="payment-form__input"/>
-                                    <label for="cash" className="payment-form__label">Cash on delivery</label>
-                                </div>
-                                
+                                    <label for="cash" className="payment-form__label">
+                                        <input type="radio" id="cash" name="card" value="card"className="payment-form__input" />
+                                        Cash on delivery
+                                    </label>                               
 
                                 
 
@@ -92,7 +158,12 @@ const CheckoutPage = () => {
 
                         <input type="submit" value="Place Order" className="order__submit-btn"/>
                     </div>
+
+                    
+
+                    
                 </div>
+                                   
             </div>
         </section>
 

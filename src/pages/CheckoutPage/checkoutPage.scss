@@ -45,9 +45,14 @@
 
     .order {
         width: 405px;
+        margin-left: 76px;
         &__title {
         }
         &__products {
+            .products__table {
+                width: 100%;
+            }
+            
         }
         &__cart {
         }
@@ -59,19 +64,24 @@
                 margin-bottom: 19px;
             }
             &__item {
+                
+            }
+            &__label {
                 display: flex;
                 align-items: center;
                 margin-bottom: 15px;
                 border: 1px solid #EAEAEA;
                 border-radius: 3px;
                 padding: 11px;
-            }
-            &__label {
+                cursor: pointer;
                 &-img {
     
                 }
             }
             &__input {
+                display: block;
+                margin-right: 10px;
+                
             }
         }
     
@@ -83,6 +93,7 @@
             font-weight: 700;
             font-size: 15px;
             line-height: 16px;
+            cursor: pointer;
         }
     }
 }
