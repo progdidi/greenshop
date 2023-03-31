@@ -4,6 +4,8 @@ import CatalogItem from '../catalogItem/CatalogItem';
 
 const RelatedSlider = (arrPlant) => {
 
+    
+
     var settings = {
         dots: true,
         arrows: false,
@@ -18,22 +20,24 @@ const RelatedSlider = (arrPlant) => {
     return ( 
         <>
             <Slider {...settings}>
-                
-                    {{arrPlant}.map((arr) => {
-                        return (
-                            <div className="related__products-item">
-                                <CatalogItem
-                                    key={arr.id}
-                                    title={arr.title} 
-                                    price={arr.price}
-                                    descr={arr.descr}
-                                    img={arr.img} 
-                                    link={arr.link}
-                                />
-                            </div>
-                            
-                        )                            
-                    })}
+                     {
+                        {arrPlant}.map((arr) => {
+                            return (
+                                <div className="related__products-item">
+                                    <CatalogItem
+                                        key={arr.id}
+                                        title={arr.title} 
+                                        price={arr.price}
+                                        descr={arr.descr}
+                                        img={arr.img} 
+                                        link={arr.link}
+                                    />
+                                </div>
+                                
+                            )                            
+                        })
+                    }
+                    
             </Slider>
         </>
      );

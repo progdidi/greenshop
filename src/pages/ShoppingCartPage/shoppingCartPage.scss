@@ -2,6 +2,7 @@
 @import '../../style/base/mixins.scss';
 
 .shopping-cart {
+    margin-bottom: 87px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -66,6 +67,11 @@
             width: 100%;
             position: relative;
             margin-bottom: 30px;
+            &__label {
+                margin-bottom: 8px;
+                font-size: 14px;
+                line-height: 16px;
+            }
             &__input {
                 width: 100%;
                 border: 1px solid #46A358;

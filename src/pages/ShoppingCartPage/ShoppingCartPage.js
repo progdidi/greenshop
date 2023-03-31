@@ -4,12 +4,25 @@ import deleteIcon from "./images/delete.svg";
 
 import QuantityCounter from "../../components/QuantityCounter/QuantityCounter";
 
-import RelatedSlider from '../../components/RelatedSlider/RelatedSlider';
+//interested
+import Slider from 'react-slick';
+import CatalogItem from '../../components/catalogItem/CatalogItem';
 import {plants} from "../../helpers/plants/plants";
 
 import './shoppingCartPage.scss';
 
 const ShoppingCartPage = () => {
+    var settings = {
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        dotsClass: 'slick-dots-shop',
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      };
+
     return ( 
         <>
         <div className="shopping-cart">
@@ -84,6 +97,7 @@ const ShoppingCartPage = () => {
                     <div className="cart">
                         <h6 className="cart__title">Cart Totals</h6>
                         <form action="" className="coupon-form">
+                            <label htmlFor="" className="coupon-form__label">Coupon Apply</label>
                             <input type="text" className="coupon-form__input" placeholder="Enter coupon code here..."/>
                             <input type="submit" value="Apply" className="coupon-form__btn"/>
                         </form>
@@ -117,8 +131,27 @@ const ShoppingCartPage = () => {
             </div>
         </div>
 
-        <div className="interestin">
-            <RelatedSlider/>
+        <div className="related">
+            <div className="container">
+                <h4 className="related__title">You may be interested in</h4>
+                <Slider {...settings}>
+                        {plants.map((plant) => {
+                            return (
+                                <div className="related__products-item">
+                                    <CatalogItem
+                                        key={plant.id}
+                                        title={plant.title} 
+                                        price={plant.descr}
+                                        img={plant.img} 
+                                        link={plant.link}
+                                    />
+                                </div>
+                                
+                            )                            
+                        })}
+                </Slider>
+            </div>           
+            
         </div>
 
         
