@@ -14,6 +14,11 @@
 
     &__details {
         max-width: 574px;
+        &-numbers {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
         &-top {
             padding-bottom: 13px;
             border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
@@ -23,14 +28,18 @@
                 font-size: 28px;
                 line-height: 16px;
                 margin-bottom: 21px;
+                
             }
             .product__price {
                 color: $green-color;
                 font-weight: 700;
                 font-size: 22px;
                 line-height: 16px;
+                position: absolute;
+                left: 0;
             }
             .product__rating {
+                margin-left: 11px;
             }
         }
         &-descr {
@@ -70,6 +79,9 @@
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 16px;
+                    &:hover {
+                        border: 1px solid $green-color;
+                    }
 
                 }
             }
@@ -145,16 +157,33 @@
     }
 
     &__about {
-        &-descr {
-            .product__description-text {
-                margin-bottom: 18px;
-                color: $grey-color;
-            }
-            .product__description-title {
-                font-weight: 700;
-            }
+        .product__tabs-buttons {
+            
+            border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+            margin-bottom: 18px;
         }
-        &-reviews {
+        .product__tabs-btn {
+            margin-right: 30px;
+            font-size: 17px;
+            line-height: 16px;
+            color: $black-color;
+            transition: all 0.5s;
+            padding-bottom: 12px;
+            cursor: pointer;
+            &:hover {
+                color: $green-color;
+                font-weight: 700;
+                border-bottom: 3px solid $green-color;
+            }
+            
+        }
+
+        .product__tabs-items {
+
+        }
+
+        .product__tabs-item {
+
         }
     }
 }

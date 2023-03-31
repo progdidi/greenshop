@@ -2,6 +2,10 @@ import { NavLink } from 'react-router-dom';
 
 import deleteIcon from "./images/delete.svg";
 
+import QuantityCounter from "../../components/QuantityCounter/QuantityCounter";
+
+import RelatedSlider from '../../components/RelatedSlider/RelatedSlider';
+import {plants} from "../../helpers/plants/plants";
 
 import './shoppingCartPage.scss';
 
@@ -27,10 +31,14 @@ const ShoppingCartPage = () => {
                                     <div className="products__item-article">SKU: 1995751877966</div>
                                 </td>
                                 <td className="products__item-price">$119.00</td>
-                                <td className="products__item-quantity"></td>
+                                <td className="products__item-quantity">
+                                    <QuantityCounter/>
+                                </td>
                                 <td className="products__item-total"></td>
                                 <td className="products__item-delete">
-                                    <img src={deleteIcon} alt="" className="delete-img" />
+                                    <button className="delete-btn">
+                                        <img src={deleteIcon} alt="" className="delete-img" />
+                                    </button>
                                 </td>
                             </tr>
                             <tr className="products__item">
@@ -40,10 +48,15 @@ const ShoppingCartPage = () => {
                                     <div className="products__item-article">SKU: 1995751877966</div>
                                 </td>
                                 <td className="products__item-price">$119.00</td>
-                                <td className="products__item-quantity"></td>
+                                <td className="products__item-quantity">
+                                    <QuantityCounter/>
+                                    
+                                </td>
                                 <td className="products__item-total"></td>
                                 <td className="products__item-delete">
-                                    <img src={deleteIcon} alt="" className="delete-img" />
+                                    <button className="delete-btn">
+                                        <img src={deleteIcon} alt="" className="delete-img" />
+                                    </button>
                                 </td>
                             </tr>
                             <tr className="products__item">
@@ -53,10 +66,15 @@ const ShoppingCartPage = () => {
                                     <div className="products__item-article">SKU: 1995751877966</div>
                                 </td>
                                 <td className="products__item-price">$119.00</td>
-                                <td className="products__item-quantity"></td>
+                                <td className="products__item-quantity">
+                                    <QuantityCounter/>
+                                </td>
                                 <td className="products__item-total"></td>
                                 <td className="products__item-delete">
-                                    <img src={deleteIcon} alt="" className="delete-img" />
+                                    <button className="delete-btn">
+                                        <img src={deleteIcon} alt="" className="delete-img" />
+                                    </button>
+                                    
                                 </td>
                             </tr>
                             
@@ -98,6 +116,12 @@ const ShoppingCartPage = () => {
                 </div>
             </div>
         </div>
+
+        <div className="interestin">
+            <RelatedSlider/>
+        </div>
+
+        
         </>
      );
 }
