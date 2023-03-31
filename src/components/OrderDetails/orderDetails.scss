@@ -1,0 +1,50 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.products {
+    &__table {
+        width: 782px;
+        border-collapse: collapse; 
+    }
+    &__header {
+        border-collapse: collapse; 
+        margin-bottom: 11px;
+        border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+        &-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            padding-bottom: 11px;
+            margin-bottom: 11px;
+            border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+        }
+    }
+    &__item {
+        background-color: $background-color;
+        margin-bottom: 10px;
+        padding: 0 23px;
+        &-info {
+            padding: 17px 5px 15px;
+        }
+        &-img {
+        }
+        &-title {
+        }
+        &-article {
+        }
+        &-price {
+            padding: 27px 0;
+        }
+        &-quantity {                
+            padding: 22px 0 23px;
+            display: flex;
+            justify-content: center;
+        }
+        &-total {
+        }
+        &-delete {
+            padding: 23px 0;
+            text-align: center;
+        }
+    }
+}

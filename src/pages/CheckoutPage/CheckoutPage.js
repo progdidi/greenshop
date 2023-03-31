@@ -3,6 +3,7 @@ import payment from './images/payment.png';
 import './checkoutPage.scss';
 
 import Modals from '../../components/Modals/Modals';
+import OrderDetails from '../../components/OrderDetails/OrderDetails';
 
 const CheckoutPage = () => {
     return ( 
