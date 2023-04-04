@@ -17,27 +17,31 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
-        <Routes>
-            <Route path="/" element={<MainPage/>} />
-            <Route path="/shop" element={<ShopPage/>} />
-            <Route path="/shop/shoppingcart" element={<ShoppingCartPage/>} />
-            <Route path="/shop/shoppingcart/checkout" element={<CheckoutPage/>} />
-            <Route path="/plantcare" element={<PlantCarePage/>} />
-            <Route path="/blogs" element={<BlogsPage/>} />
-            <Route path="/account" element={<AccountPage/>}>
-                <Route path="user" element={<AddressPage/>} />
-                <Route path="address" element={<UserPage/>} />
-                <Route path="orders" element={<UserPage/>} />
-                <Route path="wishlist" element={<UserPage/>} />
-                <Route path="support" element={<UserPage/>} />
-                <Route path="reports" element={<UserPage/>} />
-                <Route path="downloads" element={<UserPage/>} />
-            </Route>
-            
-            
-        </Routes>
-        <Footer/> 
+          <Header/>
+          <main className="main">
+            <Routes>
+              <Route path="/" element={<MainPage/>} />
+              <Route path="/shop" element={<ShopPage/>} />
+              <Route path="/shop/shoppingcart" element={<ShoppingCartPage/>} />
+              <Route path="/shop/shoppingcart/checkout" element={<CheckoutPage/>} />
+              <Route path="/plantcare" element={<PlantCarePage/>} />
+              <Route path="/blogs" element={<BlogsPage/>} />
+              <Route path="/account" element={<AccountPage/>}>
+                  <Route path="user" element={<AddressPage/>} />
+                  <Route path="address" element={<UserPage/>} />
+                  <Route path="orders" element={<UserPage/>} />
+                  <Route path="wishlist" element={<UserPage/>} />
+                  <Route path="support" element={<UserPage/>} />
+                  <Route path="reports" element={<UserPage/>} />
+                  <Route path="downloads" element={<UserPage/>} />
+              </Route>
+              
+              
+            </Routes>
+          </main>
+          
+          <Footer/> 
+        
       </Router>
            
     </div>

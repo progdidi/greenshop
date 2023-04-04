@@ -1,6 +1,7 @@
 import thanks from "./images/thanks.svg";
 import google from "./images/google.svg";
 import facebook from "./images/facebook.svg";
+import OrderDetails from "../OrderDetails/OrderDetails";
 
 import './modals.scss';
 
@@ -36,19 +37,7 @@ const Modals = () => {
 
                     <div className="recieved__details">
                         <h6 className="recieved__details-title">Order Details</h6>
-                        <table className="recieved__details-table">
-                            <tr className="recieved__details-headers">
-                                <th className="recieved__details-header">Products</th>
-                                <th className="recieved__details-header">Qty</th>
-                                <th className="recieved__details-header">Subtotal</th>
-                            </tr>
-
-                            <tr className="recieved__details-item">
-                                <td className="recieved__details-data">product</td>
-                                <td className="recieved__details-data">2</td>
-                                <td className="recieved__details-data">238$</td>
-                            </tr>
-                        </table>
+                        <OrderDetails/>
 
                         <p className="recieved__details-ship">Shiping $16.00</p>
                         <p className="recieved__details-total">Total $2,699.00</p>

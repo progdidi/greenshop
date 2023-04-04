@@ -8,6 +8,8 @@ import basket from './basket.svg';
 import './header.scss';
 
 const Header = () => {
+
+
     return ( 
         <>
         <header className="header">
@@ -18,6 +20,11 @@ const Header = () => {
                     </NavLink>
 
                     <nav className="menu">
+                        <button className="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul className="menu__list">
                             <li className="menu__list-item">
                                 <NavLink to="/" className="menu__list-link">Home</NavLink>
