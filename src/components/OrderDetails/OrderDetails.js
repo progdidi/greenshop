@@ -18,10 +18,11 @@ const OrderDetails = () => {
         <>
             <ul className="order__list">
                 <div className="order__list-header">
-                    <h6 className="order__list-title">Products</h6>
-                    <h6 className="order__list-title">Price</h6>
-                    <h6 className="order__list-title">Quantity</h6>
-                    <h6 className="order__list-title">Total</h6>
+                    <h6 className="order__list-title products">Products</h6>
+                    <h6 className="order__list-title price">Price</h6>
+                    <h6 className="order__list-title quantity">Quantity</h6>
+                    <h6 className="order__list-title total ">Total</h6>
+                    <h6 className="order__list-title delete"></h6>
                 </div>
                 {items}
             </ul>

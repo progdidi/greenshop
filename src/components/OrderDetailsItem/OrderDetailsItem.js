@@ -19,7 +19,7 @@ const OrderDetailsItem = ({img, title, article, price, amount}) => {
                 <QuantityCounter/>
             </div>
             <div className="order__item-total">
-                $
+                $100
             </div>
             <div className="order__item-delete">
                 <button className="order__item-delete-btn">

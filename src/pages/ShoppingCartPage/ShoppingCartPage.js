@@ -29,9 +29,7 @@ const ShoppingCartPage = () => {
         <div className="shopping-cart">
             <div className="container">
                 <div className="shopping-cart__inner">
-                    <div className="products">
-                        <OrderDetails/>
-                    </div>
+                    <OrderDetails/>
 
                     <div className="cart">
                         <h6 className="cart__title">Cart Totals</h6>

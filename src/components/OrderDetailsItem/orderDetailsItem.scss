@@ -3,19 +3,26 @@
 
 .order {
     &__item {
-        padding: 17px 23px;
+        padding: 17px 23px 17px 2px;
         background-color: $background-color;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-basis: 782px;
+        margin-bottom: 10px;
         &-img {
+            flex-basis: 10%;
+            margin-right: 14px;
         }
         &-info {
+            flex-basis: 30%;
         }
         &-title {
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
             color: #3D3D3D;
+            margin-bottom: 6px;
         }
         &-article {
             font-size: 14px;
@@ -26,23 +33,29 @@
             }
         }
         &-price {
+            flex-basis: 18%;
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
             color: #727272;
+            padding: 10px 0;
         }
         &-amount {
+            flex-basis: 21%;
         }
         &-total {
+            flex-basis: 14%;
             font-weight: 700;
             font-size: 16px;
             line-height: 16px;
             color: $green-color;
+            padding: 17px 0;
         }
         &-delete {
+            flex-basis: 7%;
             &-btn {
-                width: 25px;
-                height: 25px;
+                // width: 25px;
+                // height: 25px;
                 cursor: pointer;
             }
             &-img {
