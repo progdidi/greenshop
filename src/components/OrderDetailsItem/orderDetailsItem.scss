@@ -1,0 +1,55 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.order {
+    &__item {
+        padding: 17px 23px;
+        background-color: $background-color;
+        display: flex;
+        justify-content: space-between;
+        &-img {
+        }
+        &-info {
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: #3D3D3D;
+        }
+        &-article {
+            font-size: 14px;
+            line-height: 16px;
+            color: #A5A5A5;
+            span {
+                color: #727272;
+            }
+        }
+        &-price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: #727272;
+        }
+        &-amount {
+        }
+        &-total {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: $green-color;
+        }
+        &-delete {
+            &-btn {
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+            &-img {
+                
+            }
+        }
+    }
+}
+
+
