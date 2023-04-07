@@ -1,0 +1,72 @@
+@import '../../style/base/vars.scss';
+@import '../../style/base/mixins.scss';
+
+.cart {
+    .coupon-form {
+        width: 332px;
+        position: relative;
+        margin-bottom: 30px;
+        &__label {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__input {
+            width: 100%;
+            border: 1px solid #46A358;
+            border-radius: 3px;
+            padding: 13px 9px;
+            padding-right: 112px;
+        }
+        &__btn {
+            position: absolute;
+            right: 0;
+            top: 24px;
+            bottom: 0;
+            width: 102px;
+            @include green-btn;
+        }
+    }
+    &__list {
+        margin-bottom: 26px;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            
+            
+        }
+        &-category {
+            font-size: 15px;
+            line-height: 16px;
+                         
+            
+        }
+        &-sum {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 16px;
+        }
+        &-link {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            color: $green-color;
+            text-align: right;
+        }
+    }
+    &__total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        &-sum {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: $green-color;
+        }
+    }
+}

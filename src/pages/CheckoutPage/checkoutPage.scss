@@ -22,12 +22,13 @@
             font-weight: 400;
             font-size: 15px;
             line-height: 15px;
+            color: $black-color;
         }
         &__input {
             margin-top: 10px;
             width: 100%;
             display: block;
-            border: 1px solid #EAEAEA;
+            border: 1px solid $black-color;
             border-radius: 3px;
             padding: 12px 13px;
             &::placeholder {

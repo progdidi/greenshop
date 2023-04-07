@@ -10,8 +10,9 @@ const Modals = () => {
         <>
         <div className="modal">
             <div className="modal__overlay">
-                <div className="recieved modal__recieved">
+                <div className="modal__content received">
                     <div className="recieved__top">
+                        <button data-close className="modal__close-btn">x</button>
                         <img src={thanks} alt="" className="recieved__top-img" />
                         <p className="recieved__top-text">Your order has been received</p>
                     </div>
@@ -49,7 +50,7 @@ const Modals = () => {
 
                 </div>
 
-                <div className="login modal__login">
+                {/* <div className="login modal__login">
                     <div className="login__top">
                         <button className="login__top-btn">Login</button>
                         <button className="login__top-btn">Register</button>
@@ -104,7 +105,7 @@ const Modals = () => {
                             <p className="login__social-descr">Continue with Facebook</p>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         </>

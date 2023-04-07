@@ -6,78 +6,14 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        gap: 86px;
     }
 
     .cart {
-        width: 332px;        
         &__title {
             padding-bottom: 11px;
             border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
             margin-bottom: 11px;
-        }
-        .coupon-form {
-            width: 100%;
-            position: relative;
-            margin-bottom: 30px;
-            &__label {
-                margin-bottom: 8px;
-                font-size: 14px;
-                line-height: 16px;
-            }
-            &__input {
-                width: 100%;
-                border: 1px solid #46A358;
-                border-radius: 3px;
-                padding: 13px 9px;
-            }
-            &__btn {
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                @include green-btn;
-            }
-        }
-        &__list {
-            margin-bottom: 26px;
-            &-item {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 20px;
-                
-                
-            }
-            &-category {
-                font-size: 15px;
-                line-height: 16px;
-                             
-                
-            }
-            &-sum {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 16px;
-            }
-            &-link {
-                display: block;
-                font-size: 12px;
-                line-height: 16px;
-                color: $green-color;
-            }
-        }
-        &__total {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 16px;
-            &-sum {
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 16px;
-                color: $green-color;
-            }
         }
         &__buttons {
         }

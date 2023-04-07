@@ -4,6 +4,7 @@ import './checkoutPage.scss';
 
 import Modals from '../../components/Modals/Modals';
 import OrderDetails from '../../components/OrderDetails/OrderDetails';
+import CartData from '../../components/CartData/CartData';
 
 const CheckoutPage = () => {
     return ( 
@@ -15,16 +16,16 @@ const CheckoutPage = () => {
                         <h6 className="checkout-form__title">Billing Address</h6>
                         <div className="checkout-form__inputs">
                             <label htmlFor="firstname" className="checkout-form__label">
-                                First Name
-                                <input type="text" className="checkout-form__input" name="firstname" id="firstname"/>
+                                First Name 
+                                <input type="text" className="checkout-form__input" name="firstname" id="firstname" required/>
                             </label>
                             <label htmlFor="lastname" className="checkout-form__label">
                                 Last Name
-                                <input type="text" className="checkout-form__input" name="lastname" id="lastname"/>
+                                <input type="text" className="checkout-form__input" name="lastname" id="lastname" required/>
                             </label>
                             <label htmlFor="region" className="checkout-form__label">
                                 Country / Region
-                                <input type="text" className="checkout-form__input" name="region" id="region" placeholder='Select a country / region'/>
+                                <input type="text" className="checkout-form__input" name="region" id="region" placeholder='Select a country / region' required / >
                             </label>
                             <label htmlFor="town" className="checkout-form__label">
                                 Town / City
@@ -63,73 +64,11 @@ const CheckoutPage = () => {
                     <div className="order">
                         <h5 className="order__title">Your Order</h5>
                         <div className="order__products">
-                            <table className="products__table">
-                                <tr className="products__header">
-                                    <th className="products__header-title">Products</th>
-                                    <th className="products__header-title"></th>
-                                    <th className="products__header-title">Total</th>
-                                </tr>
-
-                                <tr className="products__item">
-                                    <td className="products__item-info">
-                                        <img src="" alt="" className="products__item-img" />
-                                        <h6 className="products__item-title">Barberton Daisy</h6>
-                                        <div className="products__item-article">SKU: 1995751877966</div>
-                                    </td>
-                                    
-                                    <td className="products__item-quantity">
-                                        (x2)
-                                    </td>
-                                    <td className="products__item-total"></td>
-                                </tr>
-                                <tr className="products__item">
-                                    <td className="products__item-info">
-                                        <img src="" alt="" className="products__item-img" />
-                                        <h6 className="products__item-title">Barberton Daisy</h6>
-                                        <div className="products__item-article">SKU: 1995751877966</div>
-                                    </td>
-                                    
-                                    <td className="products__item-quantity">
-                                        (x2)
-                                    </td>
-                                    <td className="products__item-total"></td>
-                                </tr>
-                                <tr className="products__item">
-                                    <td className="products__item-info">
-                                        <img src="" alt="" className="products__item-img" />
-                                        <h6 className="products__item-title">Barberton Daisy</h6>
-                                        <div className="products__item-article">SKU: 1995751877966</div>
-                                    </td>
-                                    
-                                    <td className="products__item-quantity">
-                                        (x2)
-                                    </td>
-                                    <td className="products__item-total"></td>
-                                </tr>
-                                
-                            </table>
+                            <OrderDetails/>
                         </div>
                         <div className="order__cart">
                     
-                            <ul className="cart__list">
-                                <li className="cart__list-item">
-                                    <p className="cart__list-category">Subtotal</p>
-                                    <p className="cart__list-sum">$2,683.00</p>
-                                </li>
-                                <li className="cart__list-item">
-                                    <p className="cart__list-category">Coupon Discount</p>
-                                    <p className="cart__list-sum">0.00</p>
-                                </li>
-                                <li className="cart__list-item">
-                                    <p className="cart__list-category">Shiping</p>
-                                    <p className="cart__list-sum">$2,683.00</p>
-                                </li>
-                                <a href="" className="cart__list-link">View shipping charge</a>
-                            </ul>
-
-                            <div className="cart__total">Total
-                                <p className="cart__total-sum">$2,699.00</p>
-                            </div>
+                            <CartData/>
                         </div>
 
                         <div className="order__payment">
@@ -168,7 +107,7 @@ const CheckoutPage = () => {
             </div>
         </section>
 
-        {/* <Modals/> */}
+        <Modals/>
         </>
      );
 }
