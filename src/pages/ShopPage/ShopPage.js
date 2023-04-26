@@ -31,7 +31,18 @@ const ShopPage = () => {
         dotsClass: 'slick-dots-shop',
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: false,
+                dots: true
+              }
+            }
+          ]
       };
 
 
