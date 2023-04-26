@@ -28,6 +28,7 @@ const MainPage = () => {
                 <div className="catalog__inner">
                     <div className="catalog__aside">
                         <div className="catalog__filter">
+                            <div className="catalog__menu">
                             <div className="catalog__filter-category">
                                 <h6 className="catalog__filter-title">Categories</h6>
                                 <ul className="catalog__filter-list">
@@ -115,12 +116,17 @@ const MainPage = () => {
                                     </li>
                                 </ul>
                             </div>
+                            </div>
+                            
+
+                            
                             
                         </div>
-                        <div className="banner">
-                            <img src={banner} alt="banner" className="banner__img" />
-                        </div>
+                        
                     </div>
+                    <button className="catalog__menu-btn">
+                        Filters
+                    </button>
                     <div className="catalog__content">
                         <div className="catalog__top">
                             <div className="catalog__top-buttons">
@@ -156,10 +162,16 @@ const MainPage = () => {
                         </div>
                     </div>
                     </div>
+
+                    
                 </div>
                 
             </div>
         </section>
+        '
+        <div className="banner">
+            <img src={banner} alt="banner" className="banner__img" />
+        </div>
 
         <div className="advance">
             <div className="container">
