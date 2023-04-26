@@ -131,6 +131,62 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .posts {
+        &__items {
+            max-width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+        }
+
+        .post {
+            max-width: 100%;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .advance {
+        &__items {
+            display: block;
+        }
+        &__item {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .advance {
+        &__item {
+            padding: 26px 20px 10px 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            &-img {
+                object-fit: cover;
+                width: 70%;
+            }
+        }
+    }
+
+    .posts {
+        &__items {
+            display: block;
+            .post {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
 
 
 
