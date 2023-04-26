@@ -154,7 +154,7 @@
         &-link {
         }
 
-        &-social {
+        &-extra {
             width: 354px;
             padding: 0 25px;
             padding-top: 7px;
@@ -164,7 +164,6 @@
 
             
         }
-        
     
         .social__list {
             display: flex;
@@ -200,6 +199,113 @@
         padding: 7px 0 10px;
         &-text {
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .footer {
+        &__services {
+            display: block;
+            &-items {
+                margin-bottom: 50px;
+            }
+            
+        }
+
+        &__info {
+            &-extra{
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        .newsletter {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .footer {
+
+        &__contacts {
+            flex-direction: column;
+            align-items: center;
+            .footer__logo {
+                margin-bottom: 20px;
+            }
+            &-item {
+                display: block;
+                margin-bottom: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 400px;
+            }
+        }
+        &__info {
+            display: block;
+            &-nav {
+                margin-bottom: 40px;
+            }
+            &-extra {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        &__services {
+            &-items {
+                display: block;
+            }
+            .services__item {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 25px;
+                &-img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &__info {
+            &-nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &-category {
+                width: 100%;
+                &:last-child {
+                    
+                    margin: 0 auto;
+                    margin-top: 20px;
+
+                }
+                
+            }
+            &-extra {
+                flex-direction: column;
+                align-items: center;
+                .footer__info-title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .footer {
+        &__contacts {
+            &-item {
+                width: 100%;
+            }
         }
     }
 }

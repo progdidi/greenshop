@@ -90,35 +90,38 @@ const Footer = () => {
                         </div>
                     </div>
                     
-                    <div className="footer__info-social">
-                        <h6 className="footer__info-title">Social Media</h6>
-                        <ul className="social__list">
-                            <li className="social__list-item">
-                                <a href="" className="social__list-link">
-                                    <img src={facebook} alt="facebook" className="social__list-img" />
-                                </a>
-                            </li>
-                            <li className="social__list-item">
-                                <a href="" className="social__list-link">
-                                    <img src={instagram} alt="instagram" className="social__list-img" />
-                                </a>
-                            </li>
-                            <li className="social__list-item">
-                                <a href="" className="social__list-link">
-                                    <img src={twitter} alt="twitter" className="social__list-img" />
-                                </a>
-                            </li>
-                            <li className="social__list-item">
-                                <a href="" className="social__list-link">
-                                    <img src={linkedin} alt="linkedin" className="social__list-img" />
-                                </a>
-                            </li>
-                            <li className="social__list-item">
-                                <a href="" className="social__list-link">
-                                    <img src={union} alt="union" className="social__list-img" />
-                                </a>
-                            </li>
-                        </ul>
+                    <div className="footer__info-extra">
+                        <div className="footer__social">
+                            <h6 className="footer__info-title">Social Media</h6>
+                            <ul className="social__list">
+                                <li className="social__list-item">
+                                    <a href="" className="social__list-link">
+                                        <img src={facebook} alt="facebook" className="social__list-img" />
+                                    </a>
+                                </li>
+                                <li className="social__list-item">
+                                    <a href="" className="social__list-link">
+                                        <img src={instagram} alt="instagram" className="social__list-img" />
+                                    </a>
+                                </li>
+                                <li className="social__list-item">
+                                    <a href="" className="social__list-link">
+                                        <img src={twitter} alt="twitter" className="social__list-img" />
+                                    </a>
+                                </li>
+                                <li className="social__list-item">
+                                    <a href="" className="social__list-link">
+                                        <img src={linkedin} alt="linkedin" className="social__list-img" />
+                                    </a>
+                                </li>
+                                <li className="social__list-item">
+                                    <a href="" className="social__list-link">
+                                        <img src={union} alt="union" className="social__list-img" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
 
                         <div className="footer__payment">
                             <h6 className="footer__info-title">We accept</h6>
